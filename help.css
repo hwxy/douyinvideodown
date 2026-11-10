@@ -1,0 +1,16 @@
+:root { color-scheme: light; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #172e2c; background: #f5f4ef; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 760px; padding: 70px 30px; margin: auto; }
+.eyebrow { color: #3c6b5f; font-size: 13px; letter-spacing: .18em; }
+h1 { margin: 24px 0; font-size: clamp(36px, 6vw, 56px); line-height: 1.2; letter-spacing: -.04em; font-weight: 650; }
+.lead { font-size: 17px; color: #63716d; margin-bottom: 48px; }
+section { border-top: 1px solid #d7ded6; padding: 28px 0; }
+h2 { font-size: 16px; font-weight: 600; }
+p, li, dd { font-size: 15px; line-height: 1.95; color: #53655e; }
+li { padding-left: 7px; margin: 9px 0; }
+ol { padding-left: 22px; }
+code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 13px; background: #e8ede5; padding: 3px 6px; border-radius: 4px; overflow-wrap: anywhere; }
+dt { margin-top: 20px; font-size: 15px; font-weight: 600; }
+dd { margin: 6px 0 0; }
+footer { border-top: 1px solid #d7ded6; padding-top: 25px; font-size: 12px; line-height: 1.9; color: #6f7b73; }

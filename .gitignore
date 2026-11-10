@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+work/
+__pycache__/
+*.pyc
+*.log
+*.har
+*.mp4
+.env
+.env.*

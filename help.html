@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>留影 · 安装与帮助</title>
+  <link rel="stylesheet" href="help.css">
+</head>
+<body>
+  <main>
+    <div class="eyebrow">留影 / 使用指南</div>
+    <h1>喜欢的片刻，<br>留在本地。</h1>
+    <p class="lead">一个简单的抖音视频下载工具。打开视频、点击插件、保存。</p>
+    <section>
+      <h2>01 / 安装到浏览器</h2>
+      <ol>
+        <li>解压下载的 ZIP，保留直接包含 <code>manifest.json</code> 的整个文件夹。</li>
+        <li>Chrome 地址栏输入 <code>chrome://extensions/</code>；Edge 输入 <code>edge://extensions/</code>。</li>
+        <li>开启「开发者模式」，点击「加载已解压的扩展程序」。</li>
+        <li>选择直接包含 <code>manifest.json</code> 的文件夹。</li>
+        <li>点击工具栏的拼图图标，把「留影」固定到工具栏。</li>
+      </ol>
+    </section>
+    <section>
+      <h2>02 / 下载一条视频</h2>
+      <ol>
+        <li>在抖音打开单条视频，先播放几秒。</li>
+        <li>点击「留影」，确认面板显示的视频标题。</li>
+        <li>点击「下载 MP4」，等待读取完整文件，再选择保存位置。读取期间保持视频页打开。</li>
+      </ol>
+      <p>关闭面板后，浏览器仍会继续下载。点击面板底部的「下载记录」查看文件。</p>
+    </section>
+    <section>
+      <h2>03 / 遇到问题</h2>
+      <dl>
+        <dt>没有识别到视频？</dt>
+        <dd>进入单条视频页，确认视频能播放，再点击「重新识别」。若网页要求登录或验证，先按网页提示完成。</dd>
+        <dt>下载失败或中断？</dt>
+        <dd>视频地址可能已过期。回到原页面重新播放，重新识别后再下载。浏览器下载记录会显示具体原因。</dd>
+        <dt>文件有声音却没有画面？</dt>
+        <dd>部分原视频采用 HEVC 编码，请使用支持 HEVC 的播放器。插件保留原始编码和当前播放画质。</dd>
+        <dt>哪些内容暂不支持？</dt>
+        <dd>直播、图文、DRM 加密视频、跨域嵌入播放器和手机浏览器。单个文件最大 512 MB，读取超时 120 秒。</dd>
+        <dt>如何更新到修复版？</dt>
+        <dd>替换原插件文件夹的内容，在扩展管理页点击「重新加载」，确认版本为 1.0.1，然后刷新抖音视频页。使用新文件夹时，先移除旧版再加载新版。</dd>
+      </dl>
+    </section>
+    <footer>留影 1.0.1 · 本地识别 · 网页读取后保存<br>支持桌面版 Chrome / Edge 109 及以上版本。</footer>
+  </main>
+</body>
+</html>

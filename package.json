@@ -1,0 +1,13 @@
+{
+  "name": "douyinvideodown",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "留影 · 抖音视频下载助手",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

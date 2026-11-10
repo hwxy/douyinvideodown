@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>留影 · 抖音视频下载助手</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body data-state="loading">
+    <main class="popup">
+      <header class="brand-header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none">
+              <path d="M5 8V5h3M16 5h3v3M19 16v3h-3M8 19H5v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M12 8v8m-3-3 3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <div>
+            <h1>留影</h1>
+            <p class="brand-description">抖音视频下载助手</p>
+          </div>
+        </div>
+        <span class="local-badge"><span aria-hidden="true"></span>本地处理</span>
+      </header>
+
+      <section class="page-context" aria-label="当前网页">
+        <span class="eyebrow">当前页面</span>
+        <span id="page-host" class="page-host">正在读取…</span>
+      </section>
+
+      <div id="status" class="status" data-state="loading" role="status" aria-live="polite" aria-atomic="true">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="status-label">正在识别当前页面…</span>
+      </div>
+
+      <article id="video-card" class="video-card" data-ready="false" aria-label="当前视频">
+        <div class="video-art" aria-hidden="true">
+          <span class="art-index">VIDEO / MP4</span>
+          <svg class="art-frame" width="96" height="66" viewBox="0 0 96 66" fill="none">
+            <rect x="8.5" y="8.5" width="79" height="49" rx="9.5" stroke="currentColor" />
+            <path d="M43 24.5 58 33 43 41.5V24.5Z" fill="currentColor" />
+            <path d="M.5 18V8a7.5 7.5 0 0 1 7.5-7.5h13M75 .5h13A7.5 7.5 0 0 1 95.5 8v10M95.5 48v10a7.5 7.5 0 0 1-7.5 7.5H75M21 65.5H8A7.5 7.5 0 0 1 .5 58V48" stroke="currentColor" stroke-opacity=".3" />
+          </svg>
+          <span class="art-signal"><i></i><i></i><i></i><i></i></span>
+        </div>
+        <div class="video-details">
+          <span class="video-label">此刻 · 当前视频</span>
+          <h2 id="video-title">让喜欢的片刻，留下来。</h2>
+          <p id="video-meta" class="video-meta">正在寻找当前播放的视频</p>
+        </div>
+      </article>
+
+      <section id="progress-area" class="progress-area" aria-label="下载进度" hidden>
+        <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+        <p id="progress-text" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="actions">
+        <button id="download-btn" class="download-button" type="button" disabled>下载 MP4</button>
+        <button id="refresh-btn" class="refresh-button" type="button" aria-busy="true">
+          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M16.5 8a6.75 6.75 0 1 0-.5 5M16.5 8V3.5M16.5 8H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          重新识别
+        </button>
+      </div>
+      <p class="save-note">下载将保存到你选择的位置。</p>
+
+      <footer class="footer">
+        <button id="downloads-btn" class="footer-button" type="button">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M3 9a7 7 0 1 1 2 6M3 9V4.5M3 9h4.5M10 6v4l2.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          下载记录
+        </button>
+        <button id="help-btn" class="footer-button" type="button">安装与帮助<span aria-hidden="true">↗</span></button>
+      </footer>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
